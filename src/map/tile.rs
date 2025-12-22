@@ -40,12 +40,4 @@ impl Tile {
             bg_color: None,
         }
     }
-
-    pub fn monster(char: char) -> Self {
-        Self {
-            char,
-            color: RED,
-            bg_color: None,
-        }
-    }
 }
