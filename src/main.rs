@@ -1,15 +1,15 @@
 // main.rs
 use macroquad::prelude::*;
 
-mod tile;
+mod map;
 mod entity;
-mod map_gen;
 mod game_state;
 
 use game_state::GameState;
 
 #[macroquad::main("Roguelike")]
 async fn main() {
+    macroquad::rand::srand(macroquad::miniquad::date::now() as u64);
     let mut game = GameState::new();
 
     loop {
